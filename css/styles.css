@@ -278,6 +278,7 @@ header {
     letter-spacing: 0.02em;
     color: #434455;
     padding-bottom: 32px;
+    text-align: center;
 }
 
 
@@ -333,6 +334,10 @@ header {
 .content-box {
     border: 1px solid #E7E9FC;
     background: #FFF;
+}
+
+.content-list {
+    padding-bottom: 120px;
 }
 
 .content-item-title {
