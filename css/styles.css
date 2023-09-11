@@ -156,8 +156,8 @@ header {
 
 .hero-conteiner {
     background-color: #2e2f42;
-    padding: 188px 0 text-align: center;
-
+    padding: 188px 0;
+    text-align: center;
 }
 
 .hero-title {
