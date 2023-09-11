@@ -45,10 +45,6 @@ ul {
     padding-left: 0;
 }
 
-img {
-    display: block;
-}
-
 .conteiner {
     width: 100%;
     max-width: 1158px;
@@ -75,7 +71,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
 }
 
 .logo-accent {
@@ -84,10 +79,6 @@ img {
 
 
 /* NAVIGATION */
-
-header {
-    border-bottom: 1px solid #E7E9FC;
-}
 
 .header-menu {
     display: flex;
@@ -122,7 +113,6 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding: 24px 0;
 }
 
 .header-menu-link:hover {
@@ -156,8 +146,11 @@ header {
 
 .hero-conteiner {
     background-color: #2e2f42;
-    padding: 188px 0;
-    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    padding-right: 472px;
+    padding-left: 472px;
+    align-content: center;
 }
 
 .hero-title {
@@ -168,7 +161,12 @@ header {
     color: #ffffff;
     margin-bottom: 48px;
     display: flex;
-    max-width: 496px;
+    width: 496px;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* padding-top: 188px;
+    padding-left: 472px;
+    padding-right: 472px; */
 }
 
 .hero-button {
@@ -181,14 +179,11 @@ header {
     color: #ffffff;
     cursor: pointer;
     padding: 16px 32px;
-    display: block;
+    display: inline-flex;
     align-items: flex-start;
     gap: 10px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    min-width: 169px;
-    height: 56px;
-    border: none;
 }
 
 .hero-button:hover {
@@ -199,19 +194,11 @@ header {
     background-color: #404BBF;
 }
 
-.features {
-    padding: 120px 0;
-}
-
 .features-list {
     display: flex;
     padding-bottom: 120px;
     padding-top: 120px;
     gap: 24px;
-}
-
-.features-item {
-    width: calc((100% - 72px) / 4);
 }
 
 .features-item-title {
@@ -231,10 +218,6 @@ header {
     letter-spacing: 0.02em;
 }
 
-.projects {
-    padding-bottom: 120px;
-}
-
 .projects-title {
     text-align: center;
     color: var(--text-color);
@@ -252,17 +235,13 @@ header {
     padding-bottom: 120px;
 }
 
-.projects-item {
-    width: calc((100% - 48px) / 3);
-}
 
-
-.team {
-    padding: 120px 0
-}
+.team {}
 
 .team-conteiner {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-list {
@@ -282,8 +261,6 @@ header {
 
 .team-item {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px
 }
 
 .team-item-title {
@@ -303,27 +280,11 @@ header {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+    padding-bottom: 32px;
 }
-
-.team-card {
-    padding: 32px 16px;
-}
-
 
 
 /* BUTTONS PORTOFOLIO */
-
-
-.main-menu {
-    padding: 96px 0 120px 0;
-}
-
-.button-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 72px;
-}
 
 .button {
     font-family: "Roboto", sans-serif;
@@ -334,44 +295,19 @@ header {
     color: #4d5ae5;
     background-color: #F4F4FD;
     cursor: pointer;
-    padding: 12px 24px;
-    border-radius: 4px;
-    border: 1px solid #e7e9fc;
 }
-
 
 .button:hover {
     color: #FFFFFF;
     background-color: #404BBF;
-    border: 1px solid transparent;
 }
 
 .button:focus {
     color: #FFFFFF;
     background-color: #404BBF;
-    border: 1px solid transparent;
-}
-
-.buttons-conteiner {
-    align-content: center;
 }
 
 /* CONTENT */
-
-.content-box {
-    border: 1px solid #E7E9FC;
-    background: #FFF;
-    width: calc((100% - 48px) / 3);
-}
-
-.content-list {
-    padding-bottom: 120px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-
-}
 
 .content-item-title {
     font-weight: 500;
@@ -379,7 +315,6 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-
 }
 
 .content-item-text {
@@ -387,25 +322,17 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-
 }
-
-.content-card-text {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    margin-bottom: 8px;
-
-}
-
-
 
 
 /* ------FOOTER------ */
 
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0;
+}
+
+.logo-full {
+    gap: 17.5px;
 }
 
 .footer-logo {
@@ -416,8 +343,6 @@ header {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 .footer-text {
