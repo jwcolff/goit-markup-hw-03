@@ -97,8 +97,8 @@ ul {
     display: flex;
     align-items: center;
     gap: 332px;
-    padding-bottom: 25.5px;
-    padding-top: 25.5px;
+    padding: 0 15px 0 15px;
+
 }
 
 .header-contacts-list {
@@ -146,10 +146,7 @@ ul {
 
 .hero-conteiner {
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    padding-right: 472px;
-    padding-left: 472px;
+    padding: 188px 0;
     align-content: center;
 }
 
@@ -218,6 +215,10 @@ ul {
     letter-spacing: 0.02em;
 }
 
+.projects {
+    padding: 120px 0;
+}
+
 .projects-title {
     text-align: center;
     color: var(--text-color);
@@ -235,6 +236,13 @@ ul {
     padding-bottom: 120px;
 }
 
+.projects-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.projects-title {
+    margin-bottom: 8px;
+}
 
 .team {}
 
@@ -261,6 +269,8 @@ ul {
 
 .team-item {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-title {
@@ -280,7 +290,11 @@ ul {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    padding-bottom: 32px;
+}
+
+.team-item-summury {
+    padding: 32px 0;
+
 }
 
 
